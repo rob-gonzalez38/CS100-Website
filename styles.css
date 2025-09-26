@@ -1,0 +1,93 @@
+/*
+  You can modify the styles as you wish
+  Change the colors, the font sizes, the list style, text-align, etc.
+
+   Leave the flex properties as they are - this allows your site to resize correctly
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+#main-title {
+  text-align: center;          /* text-align */
+  margin-bottom: 10px;         /* margin */
+}
+
+/* Class selector (use with: <p class="intro-text">...) */
+.intro-text {
+  line-height: 1.6;
+  margin-bottom: 16px;         /* margin */
+}
+
+img {
+  display: block;          /* makes the image behave like a block */
+  margin: 0 auto;          /* automatic left/right margin = centered */
+}
+
+
+/* Responsive layout - makes the menu and the content (inside the
+   section) sit on top of each other instead of next to each other 
+
+   Don't change the following items
+*/
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
